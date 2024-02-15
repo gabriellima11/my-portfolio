@@ -17,18 +17,17 @@ export const ProjectsDiv = styled.div`
 
 export const Projects = styled.div`
     border: 1px solid purple;
-    width: 300px;
+    width: 350px;
     height: 450px;
     border-radius: 20px;
     transition: 1s;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 
     &:hover{
         scale: 1.05;
-        width: 450px;
-        height: 500px;
+        box-shadow: 8px 9px 5px 0px rgba(102,3,102,1);
     }
 
 `

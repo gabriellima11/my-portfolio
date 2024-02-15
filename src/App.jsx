@@ -4,11 +4,11 @@ import { ProjectsList } from './projects';
 
 //STYLED COMPONENTS
 import { Nav, Logo, Header, Button, Content, Links } from './components/style_header'
-import { Main, FirstSection, Span, TextTitle, ContactButton, CVButton, Name, Div } from './components/style_firstSection'
-import { SecondSection, AbilitiesIcons, Icons } from './components/style_secondSection';
-import { ThirdSection, PersonImg, Text, DivAboutMe, RoundButton } from './components/style_thirdSection';
-import { FourthSection, ProjectsDiv, Projects, DescriptionProject, ImageProject, ButtonProject} from './components/style_fourthSection';
-import { FifthSection, DivContact, Inputs, InputMessage, SendButton } from './components/style_fifthSection';
+import { Main, FirstSection, Span, TextTitle, ContactButton, CVButton, Name, Div, Title, DivButton, Developer } from './components/style_IntroductionSection'
+import { SecondSection, AbilitiesIcons, Icons } from './components/style_AbilitiesSection';
+import { ThirdSection, PersonImg, Text, DivAboutMe, RoundButton } from './components/style_AboutMeSection';
+import { FourthSection, ProjectsDiv, Projects, DescriptionProject, ImageProject, ButtonProject} from './components/style_ProjectsSection';
+import { FifthSection, DivContact, Inputs, InputMessage, SendButton } from './components/style_ContactMeSection';
 import { Footer } from './components/style_footer';
 
 //IMAGES
@@ -18,7 +18,7 @@ import ProfilePicture from './assets/foto_perfil.jpeg'
 import { FaHtml5, FaCss3, FaReact, FaNode, FaGitAlt, FaGithub, FaLinkedin, FaGithubAlt, FaExternalLinkAlt } from 'react-icons/fa'
 import { IoLogoJavascript } from "react-icons/io";
 
-//PDF
+//ARQUIVOS
 import resume from './assets/cv.pdf'
 
 function App() {
@@ -33,21 +33,21 @@ function App() {
             <Link to='aboutMe' spy={true} smooth={true} offset={-100} duration={500}> <Links>Sobre</Links> </Link>
             <Link to='projects' spy={true} smooth={true} offset={-100} duration={500}> <Links> Projetos</Links> </Link>
           </Nav>
-          <Link to='contactMe' spy={true} smooth={true} offset={-100} duration={900}><Button>Contato</Button></Link>
+          <Link to='contactMe' spy={true} smooth={true} offset={-40} duration={900}><Button>Contato</Button></Link>
         </Content>
       </Header>
       <Main id='start'>
         <FirstSection>
           <Div>
             <Name>Gabriel <span>Lima</span></Name>
-            <h3>Desenvolvedor Front-end</h3>
-            <div>
-              <Link to='contactMe' spy={true} smooth={true} offset={-100} duration={900}><ContactButton>Entre em contato</ContactButton></Link>
+            <Developer>Desenvolvedor Front-end</Developer>
+            <DivButton>
+              <Link to='contactMe' spy={true} smooth={true} offset={-40} duration={900}><ContactButton>Entre em contato</ContactButton></Link>
               <CVButton> <a href={resume} download="CV Gabriel - Front-End">Baixar CV</a></CVButton>
-            </div>
+            </DivButton>
           </Div>
           <Div>
-            <h1>DANDO VIDA ÀS IDEIAS <br /> NO MUNDO DIGITAL<Span>.</Span></h1>
+            <Title>DANDO VIDA ÀS IDEIAS <br /> NO MUNDO DIGITAL<Span>.</Span></Title>
             <TextTitle>Criatividade e inovação andam de mãos dadas. Com uma combinação singular de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para construir a presença online dos seus sonhos.</TextTitle>
           </Div>
         </FirstSection>
@@ -67,7 +67,7 @@ function App() {
         <ThirdSection id='aboutMe'>
           <PersonImg src={ProfilePicture} />
           <DivAboutMe>
-            <h1>HELLO WORLD, <br /><Span>SOU GABRIEL LIMA.</Span></h1>
+            <h2>HELLO WORLD, <br /><Span>SOU GABRIEL LIMA.</Span></h2>
             <Text>Dou as boas-vindas ao meu mundo criativo! Sou apaixonado por programação, onde busco constantemente explorar novas fronteiras e desafiar minha criatividade. Ao longo dos anos, desenvolvi habilidades em Desenvolvivmento Web, e estou sempre em busca de aprimorar meu conhecimento.</Text>
             <div>
               <RoundButton><a href="https://www.linkedin.com/in/limaf-gabriel" target='_blank'><FaLinkedin size={30}></FaLinkedin></a></RoundButton>

@@ -24,6 +24,7 @@ export const AbilitiesIcons = styled.div`
       width: 100vw;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
 `
 

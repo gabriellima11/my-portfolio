@@ -8,7 +8,7 @@ export const Nav = styled.nav`
 
 export const Header = styled.header`
     height: 5rem;
-    width: 100vw;
+    width: 100%;
     display: flex;
     position: fixed;
     top:0;
@@ -16,7 +16,6 @@ export const Header = styled.header`
     background-color: black;
     z-index: 3;
     box-shadow: 0 0 15px #3f003f;
-    
 `
 export const Content = styled.div`
     width: 80%;
@@ -29,6 +28,10 @@ export const Content = styled.div`
 export const Logo = styled.h1`
     font-size: 35px;
     cursor: pointer;
+
+    @media(${breakpoints.sm}){
+      font-size: 30px;
+    }
 `
 
 export const Links = styled.a`

@@ -27,12 +27,41 @@ export const Div = styled.div`
 
 export const Name = styled.h1`
     font-size: 45px;
+
+    @media(${breakpoints.md}){
+          text-align: center;
+    }
+`
+
+export const Developer = styled.h3`
+    @media(${breakpoints.md}){
+          text-align: center;
+    }
+`
+
+export const Title = styled.h2`
+@media(${breakpoints.md}){
+      text-align: center;
+    }
+    
 `
 
 export const TextTitle = styled.p`
     width: 80%;
     text-align: justify;
     line-height: 30px;
+
+    @media(${breakpoints.md}){
+      width: 100%;
+    }
+`
+
+export const DivButton = styled.div`
+    @media(${breakpoints.md}){
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
 `
 
 export const ContactButton = styled.button`
@@ -61,6 +90,7 @@ export const ContactButton = styled.button`
 
     @media(${breakpoints.bg}){
       margin-bottom: 20px;
+      margin-right: 0;
     }
 
 `

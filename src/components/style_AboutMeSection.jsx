@@ -10,6 +10,8 @@ export const ThirdSection = styled.section`
 
     @media(${breakpoints.md}){
       flex-direction: column;
+      width: 80%;
+      text-align: center;
     }
 `
 
