@@ -1,48 +1,33 @@
 import styled from 'styled-components'
-import breakpoints from '../breakpoints'
+import breakpoints from '../../breakpoints'
 
 //TERCEIRA SECTION
 
-export const ThirdSection = styled.section`
+export const AboutMeSection = styled.section`
     display: flex;
     margin: 10rem auto;
     width: 60%;
 
-    @media(${breakpoints.md}){
-      flex-direction: column;
-      width: 80%;
-      text-align: center;
-    }
-`
 
-export const PersonImg = styled.img`
+  .personImage{
     width: 250px;
     border-radius: 20px;
     margin-right: 20px;
+  }
 
-    @media(${breakpoints.md}){
-      width: 10rem;
-      margin: 10px auto;
-    }
-`
-
-export const DivAboutMe = styled.div`
+  .boxAboutMe{
     display: flex;
     flex-direction: column;
     justify-content: center;
-`
+  }
 
-export const Text = styled.p`
+  .textAboutMe{
     margin: 10px 0 10px 0;
     width: 80%;
     text-align: justify;
-    
-    @media(${breakpoints.md}){
-        width: 100%;
-    }
-`
+  }
 
-export const RoundButton = styled.button`
+  .roundButton{
     background-color: purple;
     border: none;
     border-radius: 50%;
@@ -62,6 +47,23 @@ export const RoundButton = styled.button`
     &:active{
       scale: 0.95;
       transition: 0.1s;
+    }
+  }
+
+  //INICIO MEDIA SCREEN
+    @media(${breakpoints.md}){
+      flex-direction: column;
+      width: 80%;
+      text-align: center;
+
+      .personImage{
+      width: 10rem;
+      margin: 10px auto;
+      }
+
+      .textAboutMe{
+        width: 100%;
+      }
     }
 `
 

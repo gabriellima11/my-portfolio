@@ -1,6 +1,7 @@
 import SnapClimaImage from './assets/projects/snapclima.png'
 import AppleWatchImage from './assets/projects/apple-watch-clone.png'
 import CardapioImage from './assets/projects/cardapio.png'
+import RickAndMortyImage from './assets/projects/rick-and-morty.png'
 
 const SnapClima = {
     nome: "Snap Clima",
@@ -10,7 +11,7 @@ const SnapClima = {
     github: "https://github.com/gabriellima11/snapclima"
 }
 
-const Apple = {
+const ApplePageClone = {
     nome: "Apple Watch - Clone",
     description: "Clone do site da Apple desenvolvido com o objetivo de criar interações na página usando JavaScript. Foi utilizada manipulação de inputs",
     image: AppleWatchImage,
@@ -26,4 +27,12 @@ const Cardapio = {
     github: "https://github.com/gabriellima11/cardapio-react"
 }
 
-export const ProjectsList = [Apple, SnapClima, Cardapio]
+const RickAndMortyAPI = {
+    nome: "Rick and Morty API - Clone",
+    description: "Plataforma desenvolvida em React com sistema de paginação. Foi utilizado React Hooks e mapeamento de listas, além de utilizar Axios para integração da API no desenvolvimento",
+    image: RickAndMortyImage,
+    link: "https://rick-and-morty-api-gfl.vercel.app",
+    github: "https://github.com/gabriellima11/rick-and-morty-api"
+}
+
+export const ProjectsList = [SnapClima, RickAndMortyAPI, ApplePageClone, Cardapio]
