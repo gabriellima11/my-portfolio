@@ -2,6 +2,7 @@ import SnapClimaImage from './assets/projects/snapclima.png'
 import AppleWatchImage from './assets/projects/apple-watch-clone.png'
 import CardapioImage from './assets/projects/cardapio.png'
 import RickAndMortyImage from './assets/projects/rick-and-morty.png'
+import SearchCEPImage from './assets/projects/search-cep.png'
 
 const SnapClima = {
     nome: "Snap Clima",
@@ -35,4 +36,12 @@ const RickAndMortyAPI = {
     github: "https://github.com/gabriellima11/rick-and-morty-api"
 }
 
-export const ProjectsList = [SnapClima, RickAndMortyAPI, ApplePageClone, Cardapio]
+const SearchCEP = {
+    nome: "Procura CEP",
+    description: "Projeto para verificar CEP's construido afim de consolidar conhecimentos no React. Além dos React Hooks, nele foi utilizado styled-components, Axios, e Bootstrap Icons ",
+    image: SearchCEPImage,
+    link: "https://search-cep-gfl.vercel.app",
+    github: "https://github.com/gabriellima11/search-cep"
+}
+
+export const ProjectsList = [SearchCEP, RickAndMortyAPI, SnapClima, ApplePageClone, Cardapio]
